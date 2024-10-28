@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: Red/Black, sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #dbdbdb; /* Light background */
+    color: rgb(32, 23, 23); /* Dark text color for better readability */
+}
+
+/* Header Styles */
+header {
+    background-color: gray; /* Light grey background */
+    color: black; /* Text color */
+    padding: 40px 20px; /* Padding inside the header */
+    text-align: center; /* Center align text */
+}
+
+h1 {
+    font-size: 2.5em; /* Font size for main heading */
+    margin: 0; /* Remove margin */
+}
+
+h2 {
+    font-size: 1.4em; /* Font size for sub-headings */
+    margin-top: 10px; /* Margin for spacing */
+    font-weight: 300; /* Lighter weight for a modern look */
+}
+
+/* Section Styles */
+section {
+    background: #c0c2c1; /* Grey background for sections */
+    margin: 20px auto; /* Margin around sections */
+    padding: 20px; /* Padding inside sections */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Max width for sections */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* About Section Styles */
+#about-us {
+    padding: 20px; /* Padding for About section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Skills List Styles */
+#skills ul {
+    list-style-type: none; /* Remove bullets from list */
+    padding: 0; /* Remove padding */
+}
+
+#skills li {
+    background: #ffffff; /* White background for list items */
+    margin: 10px 0; /* Margin between items */
+    padding: 15px; /* Padding inside list items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s ease; /* Transition effect for hover */
+    font-weight: 500; /* Semi-bold text */
+    position: relative; /* Positioning for inner text */
+}
+
+/* Inner Text Box Style for Skills */
+#skills li:before {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(0, 0, 0, 0.05); /* Light overlay */
+    border-radius: 5px; /* Rounded corners */
+    z-index: -1; /* Behind the text */
+}
+
+#skills li:hover {
+    background-color: #8d9494; /* Dark grey background */
+    color: white; /* Change text color on hover */
+}
+
+/* Contact Section Styles */
+#contact-us {
+    padding: 20px; /* Padding for Contact section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center align contact information */
+}
+
+#contact-us a {
+    color: black; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold text for links */
+}
+
+#contact-us a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center align footer text */
+    padding: 20px 0; /* Padding for footer */
+    background-color: gray; /* Light grey background */
+    color: black; /* Text color in footer */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller font size on mobile */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Smaller font size on mobile */
+    }
+
+    section {
+        padding: 15px; /* Less padding on mobile */
+    }
+}
